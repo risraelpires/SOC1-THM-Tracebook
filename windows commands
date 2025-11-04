@@ -1,0 +1,47 @@
+lusrmgr.msc - local user and group management
+ctrl + shift + esc - opens task manager
+msconfig - advanced troubleshooting
+psshutdown - PS command to Sysinternals Suite, remotely shuts down, reboot, log off, or hibernate
+Windows systems.
+
+C:\Windows\System32\control.exe /name Microsoft.Troubleshooting - command for Windows troubleshooting
+control.exe - opens control panel
+
+UAC - User Account Control
+UserAccountControlSettings.exe
+
+Task Scheduler - create and manage common tasks for the computer to automatically at all times
+specified (run app or script)
+Actions > Create a Basic Task
+
+Event Viewer - view events that occured on the computer (audit trail) diagnose problems and investigate
+actions executed on the system
+
+Shared Folders - shared that others can connect to
+
+perfmon - performance monitor
+
+compmgmt.msc - computer management
+
+msinfo32 - system info
+
+resmon.exe - resource monitor
+
+cmd commands
+
+whoami - outputs logged-in user
+hostname - outputs computer name
+ipconfig - network address settings (/all - shows detailed info)
+
+/? - after command shows help manual
+cls - clears
+netstat - protocol statistics and current TCP/IP network connections
+net - manage network resources
+(net help)
+net user
+
+Windows Registry - central hierarchical database used to store information necessary to configure
+the system for one or more users, apps, and hardware devices.
+
+
+
