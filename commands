@@ -43,5 +43,128 @@ net user
 Windows Registry - central hierarchical database used to store information necessary to configure
 the system for one or more users, apps, and hardware devices.
 
+wf.msc - opens Windows firewall
+"Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper-resistant, and malicious software is unable to tamper with the security functions of the TPM".
+Per Microsoft, the Volume Shadow Copy Service (VSS) coordinates the required actions to create a consistent shadow copy (also known as a snapshot or a point-in-time copy) of the data that is to be backed up. 
+Create a restore point
+Perform system restore
+Configure restore settings
+Delete restore points
+
+cmd
+
+set - checks 
+
+cmd
+set - checks your path
+ver - OS version
+systeminfo - various system info
+driverquery - shows driver info
+| more - displays info page by page
+ctrl + c - gets out of page
+ipconfig - shows network ifno
+ - /all shows more info about network configuration (DNS & DHCP)
+tracert (trace route) - traces the network rotue traveresed to reach the target
+nslookup - looks up host or domain name and returns its IP address
+ - nslookup example.com - looks up default name server
+ - nslookup  example.com 1.1.1.1 - looks up the 1.1.1.1 name server
+netstat - displays current active network connections
+ -a = all connections
+ -b shows program associated with each listening/established connection
+ -o shows the PID (Process ID)
+ -n uses numerical form for addresses and port numbers
+cm
+cd - current drive and directory
+dir /a = shows all hidden system files 
+dir /s = shows files in the current directory and subdirectoriescls
+tree = visually represents the child directories and subdirectories
+
+mkdir (name) - makes directory
+rmdir (name) - removes directory
+type - shows contents of a particular text file
+copy - allows you to copy files from one location to another
+move - move the file 
+ copy *.md C:\Markdown - "*" moves multiple files- this copies all markdown files to the markdown dir
+ -dir (file name) /s - searches for file
+ -dir (file name) /s - *.(file format) /s - searches for files with the file type
+del - deletes file
+
+tasklist - shows task manager
+tasklist /FI " imagename eq sshd.exe"
+  - /FI - sets filter image name equals
+tasklist | findstr "task" 
+taskkill /PID (PID)
+taskkill /IM (notepad.exe)
+ - taskkill /F /IM cmd.exe -/F force end task
+start (app): 
+- start spotify:
+chkdsk - checks the file system and disk volumes for errors and bad sectors
+driverquery - shows a list of installed device drivers
+sfc /scannow - scans sys files for corruption and repairs them if possible
+
+To enter CMD as ADMIN - Windows -> Type CMD -> Ctrl + Shift + Enter
+
+shutdown /s - shut down a system
+shutdown /r - restarts a system
+shutdown /a - abort a scheduled system shutdown
+---------------------------------------------------
+PowerShell
+- CLI tools and scripting environments fellshort in automating and managing systems
+* (Programming) Object - represents an item with properties (characteristics) and methods (actions)
+PS commands = cmdlets
+[Naming Convention]
+Verb-Noun
+(Get-Content)
+To Filter Commands
+Get-Command -CommandType "Function"
+
+Get-Help - provides detailed info about cmdlets, usage, parameters
+-examples - provides example of the commandlet
+Get-Alias - list all aliases available (dir)
+
+Can download cmdlets to extend functionality 
+- search for modules (collection of cmdlets)
+--> Find-Module -Name "(partial name)*" - * wildcard
+
+Install-Module -Name "(cmdlet)"
+
+Get-ChildItem - lists the files and directories (like dir/ls)
+-Path specifies which path
+Set-Location -Path ".\Documents"
+
+Filtering:
+Get-ChildItem | Where-Object -Property "Extension" -eq ".txt"
+-ne
+-gt
+-ge
+-lt
+-le
+Get-ChildItem | Where-Object -Property "Name" -like "ship"
+" | Select-Object Name,Length
+Select-String - similar to grep or findstr
+
+Create an Item in PS:
+New-Item -Path " "
+Remove-Item -Path " "
+Copy-Item -Path " "
+Move-Item - Path 
+Get-Content - similar to type in cmd or cat in Linux
+
+Get-ComputerInfo - OS, hardware specs, BIOS details
+Get-LocalUser
+Get-NetIPConfiguration - detailed info about network interfaces
+Get-NetIPAddress
+
+Get-Process - shows CPU and memory usage
+Get-Service 
+Get-NetTCPConnection - displays current TCP connections - remote and local endpoints
+Get-FileHash 
+
+
+Scripting - the process of writing and executing a series of commands contained in a
+text file (script) to automate tasks that one would generally perform manually in a shell.
+
+Invoke-Command - enables efficient remote management
+
 
 
