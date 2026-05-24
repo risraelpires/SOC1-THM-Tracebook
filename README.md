@@ -25,5 +25,5 @@ Each concept or lab is documented using structured blocks:
 - Wireshark, Nmap, Metasploit
 
 # Author
-* Russ – Junior at Indian River State College | Bachelor of Science in Information Technology Management & Cybersecurity (Expected May 2027)
+* Russ – Junior at Indian River State College | Bachelor of Science in Information Technology Management & Cybersecurity (Expected Dec 2026)
 * Focused on reproducible cyber labs, modular documentation, and SOC1 readiness for CompTIA CySA+ exam.
