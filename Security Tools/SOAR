@@ -1,0 +1,56 @@
+# SOAR
+
+> Security Orchestration, Automation, and Response (SOAR)
+
+# Challenges
+- SOC Teams face challenges like alert fatigue, manual processes, disconnected tools, and communication difficulties
+across teams.
+  * Alert Fatigue: numerous amount of security tools = large number of alerts
+    - False positives & insufficient for investigation
+  * Disconnected Tools:
+    - Deployed tools without integration (navigating through firewall logs & rules which are handled independently from
+      endpoint security logs.
+  * Manual Process: 
+    - Lack of documented SOC investigation procedures = inefficient means of addressing alerts
+  * Talent Shortage
+
+# CORE ELEMENTS
+
+> SOC - Centralized location for monitoring and protecting digital assets.
+- Security incident handing through continuous monitoring and analsysis.
+  * Monitoring and Detection - scanning/flagging suspicious activities within a network environment.
+    (Failed login attempts, logins from unknown locations)
+- Recovery and Remediation
+  * First responders for cyber threats
+    (Isolating/shutting down infected endpoints, removing malware, stopping malicious processes)
+   Tools: EDR (isolating endpoints), Firewalls (blocking IPs), IAM (disabling user accounts)
+- Threat Intelligence: Evidence-based knowledge about existing or emerging cyber threats.
+  * Continuous and latest feeds of threat data (IP addresses, hashes, domains)
+- Communication
+  * Coordinate with teams (IT/Management) to communicate threats and ensure incidents are addressed.
+-----------------------------------------------------------------------------------------------------------------------------------
+> Orchestration:
+  * Tool that unifies all security tools used in a SOC; analyst do not need to switch between SIEM, EDR, Firewall,
+  and other security tools during investigation.
+  - Enables operational tools within a single SOAR instance & provides ticketing and case management.
+  - Connects different tools from various vendors within a unified SOAR instance and defines workflows (playbooks) for investigating
+  various type of alerts.
+
+> Automation:
+  * Coordinating with multiple tools predefined actions (Playbooks).
+  - The SOAR will follow the playbooks (no manual clicks)
+
+> Response:
+  * Gives the ability to take actions using different tools from one unified interface and automate the response.
+
+> CVE (Common Vulnerabilities and Exposures) - vulnerability that is disclosed publicly and assigned a CVE number.
+- SOC Teams have to address newly released CVEs by verifying whether they exists in the network and patching them.
+  * Analyst must look out for publications of new CVEs and their remediation plans.
+----------------------------------------------------------------------------------------------------------------------------------
+# TOOLS USED
+- Threat Intel Workflows - Setup playbooks for a given scenario
+----------------------------------------------------------------------------------------------------------------------------------
+# NEW TERMS LEARNED: 
+
+* Playbook - predefined list of actions to handle an incident.
+* Advisory List - an official, public directory that publishes discovered software vulnerabilties and security flaws.
