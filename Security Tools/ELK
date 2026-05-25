@@ -15,7 +15,7 @@ Beats - host-based agents (data-shippers) that ship/transfer data from endpoints
 
 K - Kibana: web-based data visualization toolthat works with Elasticsearch to analyze, investigate,
 and visualize data streams in real time.
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 > Discover Tab
 - Shows ingested logs, search bar, and normalized fields.
 
@@ -32,7 +32,7 @@ and visualize data streams in real time.
 (i.e.) Source_ip: 238.163.231.224 AND UserName: Suleman
 
 - Source_Country : United States AND UserName : James OR Albert
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 # TOOLS USED
 
 - Elastic Stack
@@ -43,18 +43,19 @@ and visualize data streams in real time.
 * Profied user behavior
 * Analyzed geographic patterns
 * Created a structured output for reporting (visualizations and dashboards)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 - KQL
 
+"United States" AND NOT ("Florida")
+Source_ip: 238.163.231.224 AND UserName: Suleman
+Source_Country : United States AND UserName : James OR Albert
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 # RECAP
 
 Explored ELK, a widely adopted platform used by SOC teams for log management, threat detection, and
 security investigations. Learned how ELK ingest, parses, indexes, and visualizes large volumes of data.
 Practiced using KQL and filtering features to investigate user activity and identify anomalies.
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # NEW TERMS LEARNED: 
 
 * Kibana - web-based visualization tool for exploring data stored in Elasticsearch (dashboards and
