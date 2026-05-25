@@ -7,6 +7,7 @@ Document and analyze simulated adversary behavior across the SOC1 pathway using 
 * SOC1-THM-Tracebook/
 * ├── Cyber Defence Frameworks/ ├── Diamond-Model/ ├── MITRE/ ├── Summit - Threat Simulation & Detection Engineering/ ├──
 * ├── Cyber Threat Intelligence/ ├── Intro/ ├──
+* ├── Security Tools/ ├── ELK/ ├── 
 * ├── Templates/ ├── Repo/ ├──
 * └── README.md
 
