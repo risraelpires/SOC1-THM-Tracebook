@@ -1,0 +1,61 @@
+# Elastic Stack - (ELK)
+
+- ELK was developed to store, search, and visualize large amounts of data.
+- Organizations use it to monitor application performance and perform searches on large datasets.
+> SOC analyst use ELK to perform log analysis and investigations.
+
+# CORE ELEMENTS
+
+E - Elasticsearch: full-text search and analytics engine for JSON-formatted documents.
+
+L - Logstash: data processing engine that takes data from multiple sources, filters/normalizes it,
+and then sends it to the destination (Kibana or listening port).
+
+Beats - host-based agents (data-shippers) that ship/transfer data from endpoints to ELasticsearch.
+
+K - Kibana: web-based data visualization toolthat works with Elasticsearch to analyze, investigate,
+and visualize data streams in real time.
+
+> Discover Tab
+- Shows ingested logs, search bar, and normalized fields.
+
+> KQL - Kibana Query Language - search query language used to search ingested logs/documents in Elasticsearch.
+
+- Free text search (text only - looks for the whole string)
+
+    * - wildcard to match parts of the word
+    Logcial Operators (AND | OR | NOT)
+
+(i.e.) "United States" AND NOT ("Florida")
+
+- Field-based search (Field: Value)
+(i.e.) Source_ip: 238.163.231.224 AND UserName: Suleman
+
+- Source_Country : United States AND UserName : James OR Albert
+
+# TOOLS USED
+
+- Elastic Stack
+> Investigated VPN logs
+* Filtered by date ranges
+* Identified high-volume IPs and users
+* Investigated anomalies in traffic
+* Profied user behavior
+* Analyzed geographic patterns
+* Created a structured output for reporting (visualizations and dashboards)
+
+- KQL
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# RECAP
+
+Explored ELK, a widely adopted platform used by SOC teams for log management, threat detection, and
+security investigations. Learned how ELK ingest, parses, indexes, and visualizes large volumes of data.
+Practiced using KQL and filtering features to investigate user activity and identify anomalies.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# NEW TERMS LEARNED: 
+
+* Kibana - web-based visualization tool for exploring data stored in Elasticsearch (dashboards and
+charts)
